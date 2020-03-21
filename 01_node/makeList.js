@@ -13,6 +13,7 @@ list2.next=list3
 list3.next=list4
 // your code here
 
+
 console.log(list)
 console.log(JSON.stringify(list));
 
