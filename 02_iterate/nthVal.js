@@ -7,6 +7,7 @@ const { printLinkedList } = require('./printLinkedList');
  * If n is greater than the number of nodes, it returns null.
  */
 const nthVal = (node, n) => {
+  
   // your code here
 };
 

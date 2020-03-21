@@ -1,6 +1,12 @@
 const { Node } = require('../01_node/node');
 
 const length = node => {
+  let count = null
+
+  while(node.val = true ){
+    count++
+  }
+  
   // your code here
 };
 
