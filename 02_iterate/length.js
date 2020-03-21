@@ -1,13 +1,12 @@
 const { Node } = require('../01_node/node');
 
 const length = node => {
-  let count = null
-
-  while(node.val = true ){
-    count++
+  let count = 0
+  while(node){
+    count+=1
+    node=node.next
   }
-  
-  // your code here
+  return count
 };
 
 const A = new Node('A');
