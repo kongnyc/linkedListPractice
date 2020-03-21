@@ -13,7 +13,20 @@ const { setup } = require('./fizzbuzzSetup');
  *
  */
 const fizzbuzz = node => {
-  // your code here
+  let count = 0
+  let newNode = node;
+  while(newNode){
+    count+=1
+    if (count % 3===0 && count%5===0){
+       newNode.val= "fizzbuzz"
+      }else if(count%5===0){
+       newNode.val= "buzz"
+      }else if (count % 3===0){
+       newNode.val= "fizz"
+      }
+    newNode=newNode.next
+  } 
+  return node
 };
 
 const testList = setup();

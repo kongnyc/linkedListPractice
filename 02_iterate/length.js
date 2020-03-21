@@ -2,9 +2,10 @@ const { Node } = require('../01_node/node');
 
 const length = node => {
   let count = 0
-  while(node){
+  let newNode =node
+  while(newNode){
     count+=1
-    node=node.next
+    newNode=newNode.next
   }
   return count
 };

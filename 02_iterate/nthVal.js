@@ -8,12 +8,13 @@ const { printLinkedList } = require('./printLinkedList');
  */
 const nthVal = (node, n) => {
   let count = 0
-  while(node){
+  let newNode = node;
+  while(newNode){
     count+=1
     if (n===count){
-        return node.val
+        return newNode.val
       }
-    node=node.next
+    newNode=newNode.next
   } 
 };
 
