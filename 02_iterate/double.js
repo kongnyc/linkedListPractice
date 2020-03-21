@@ -6,6 +6,12 @@ const { printLinkedList } = require('./printLinkedList');
  * stored in each node.
  */
 const double = node => {
+  let curr = node;
+  while (curr) {
+    curr.val += curr.val;
+    curr = curr.next;
+  }
+  return node;
   // your code here
 };
 
