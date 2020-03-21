@@ -6,6 +6,15 @@ const { Node } = require('./node');
  */
 const list = new Node('A');
 // your code here
+const nodeB = new Node("B")
+
+list.next = nodeB
+
+list.next = nodeB
+nodeB = new Node ("C")
+
+
+nodeB.next = new Node("C")
 
 console.log(JSON.stringify(list));
 
